@@ -1,22 +1,8 @@
 // Стили для Блока "Услуги и цены"
 
-// .test {
-//   color: tomato;
-//   //   width: 500px;
-//   //   height: 500px;
-//   //   background-color: tomato;
-//   //   border: solid turquoise;
-// }
-
-// .prices-services {
-//   background-color: tomato;
-// }
-
 .price-string {
   @include flex;
   justify-content: space-between;
-  //   align-content: flex-end;
-  //   align-items: flex-end;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -28,13 +14,10 @@
 
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
-  //   color: tomato;
   width: 100%;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 8px;
-  //   border: 2px solid;
-  //   align-content: ;
 
   @media (min-width: 768px) {
     margin-top: 13px;
@@ -101,8 +84,6 @@
 
 .prices-button {
   @include button(transparent, $accent-color);
-  //   margin-left: auto;
-  //   margin-right: auto;
 }
 
 .prices-services {
@@ -137,13 +118,10 @@
 }
 
 .price-list1 {
-  //   margin-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 10px;
-  //   border: solid;
-  //   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 
   @media (min-width: 1280px) {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -161,8 +139,6 @@
   padding-right: 30px;
   padding-bottom: 30px;
   padding-top: 10px;
-  //   border: solid;
-  //   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 
   @media (min-width: 1280px) {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
