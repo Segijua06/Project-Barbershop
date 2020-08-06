@@ -132,6 +132,14 @@ header .container {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .portfolio-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: -webkit-box;
@@ -156,14 +164,6 @@ header .container {
   .portfolio-list .portfolio-item {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .portfolio-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
