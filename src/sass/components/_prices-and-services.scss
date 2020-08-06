@@ -15,6 +15,8 @@
 .price-string {
   @include flex;
   justify-content: space-between;
+  //   align-content: flex-end;
+  //   align-items: flex-end;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -22,14 +24,21 @@
 }
 
 .underline {
-  display: inline-flex;
+  display: flex;
 
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
-  color: tomato;
-  width: 20px;
+  //   color: tomato;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 8px;
   //   border: 2px solid;
   //   align-content: ;
+
+  @media (min-width: 768px) {
+    margin-top: 13px;
+  }
 }
 
 .prices-slogan::before {
@@ -76,6 +85,7 @@
 }
 
 .price-item {
+  min-width: max-content;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;

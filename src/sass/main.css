@@ -313,11 +313,19 @@ header {
 }
 
 .underline {
-  display: inline-flex;
+  display: flex;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
-  color: tomato;
-  width: 20px;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .underline {
+    margin-top: 13px;
+  }
 }
 
 .prices-slogan::before {
@@ -365,6 +373,7 @@ header {
 }
 
 .price-item {
+  min-width: max-content;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
